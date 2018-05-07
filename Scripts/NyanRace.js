@@ -26,7 +26,7 @@ var raceDistance = window.innerWidth;
 
 /* Race Movement Maximum Value */
 /* This value sets the max value for the RNG function (getMoveValues) */
-var moveMax = (raceDistance * .001);
+var moveMax = 3;
 
 /* Nyan Cat's Movement Rate - RNG */
 var nyanMove = 0; 
@@ -48,6 +48,16 @@ var timerMilliseconds = 0;
 
 /* Start Race On Button Click */
 function startRace() {
+	/* Scale moveMax Based on Window Width Break Points */
+	if (raceDistance <= 768) {
+		moveMax = 2;
+	} else if (raceDistance > 768 <= 1080) {
+		moveMax = 3;
+	} else if (raceDistance > 1080) {
+		moveMax = 5;
+	}
+	
+	/* Start Intervals */
 	moveInterval = setInterval(runRace, moveRate); 
 	raceTimer = setInterval(startTimer, 100); /* Millisecond Counter */
 	
