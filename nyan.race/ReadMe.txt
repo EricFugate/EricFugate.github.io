@@ -1,5 +1,6 @@
 Author: Eric Fugate
 Last Modified: 05/07/2018
+https://ericfugate.github.io/nyan.race/
 
 Description:
 This web page is the final project of my Introduction to Web Development (CIS 370) course from Missouri State University.
