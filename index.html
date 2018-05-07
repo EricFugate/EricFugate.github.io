@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+	<head>
+		<!--
+		Author: Eric Fugate
+		Last Modified: 05/07/2018
+		
+		Filename: index.html
+		
+		This page is a parody/tribute to the Nyan.Cat website (www.nyan.cat).
+		The visual theme used is meant to be similar to the official site.
+		-->
+		
+		<title> NYAN.RACE! </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="Stylesheets/NyanRace.css" rel="stylesheet" />
+		<script src="Scripts/NyanRace.js" defer></script>
+	</head>
+
+	<body>
+		<div id="RaceHeading">
+			Nyan Cat VS. Tac Nayn
+		</div>
+	
+		<div id="StartButton">
+			<!-- Start Button -->
+			<input type="button" name="Start" value="Start Race" class="button"; onclick="startRace()"/>
+			<br><br>
+		</div>
+		
+		<div id="ResetButton">
+			<!-- Reset Button -->
+			<input type="button" name="Reset" value="Reset Race" class="button"; onclick="resetRace()"/>
+			<br><br>
+		</div>
+		
+		<!-- Seconds Timer -->
+		<div id="RaceNyanedFor">
+			The racers have nyaned for
+			<br>
+			<div id="Timer">0.0</div>			
+			Seconds
+		</div>
+		
+		<!-- Racer Images -->
+		<div id="RacerImages">
+			<img src="Assets/Images/nyancatRainbow.gif" style="left: 0px;" id="NyanCat" />
+			<br><br>
+			<img src="Assets/Images/tacnaynTrail.gif" style="left: 0px;" id="TacNayn" />
+			<br><br>
+		</div>
+	
+		<!-- Link to Official Nyan.Cat Site - Opens in New Tab -->
+		<div id="MoreNyan">
+			Need More Nyan In Your Life? 
+			<br>
+			<a href="http://www.nyan.cat" target="_blank">Click Here</a>
+		</div>
+		
+		<!-- Container for Winner Images -->
+		<div id="WinnerContainer">
+			<img src="Assets/Images/nyancatWin.jpg" id="NyanCatWin" onclick="resetRace()"/>
+			<img src="Assets/Images/tacnaynWin.jpg" id="TacNaynWin" onclick="resetRace()"/>
+			<img src="Assets/Images/tie.jpg" id="Tie" onclick="resetRace()"/>
+		</div>
+	</body>
+	
+</html>

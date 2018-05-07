@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/*
+Author: Eric Fugate
+Last Modified: 05/07/2018
+
+Filename: NyanRace.css
+
+Notes:
+Font sizes primarily use viewport values, but also pixels as a fallback
+in case there is a browser incompatibility with browser viewport support
+*/
+
+@font-face {
+  font-family: SilkscreenNormal;
+    src: url(../Assets/Fonts/slkscr.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+	background-image: url('../Assets/Images/starryskyblue.gif');
+	background-repeat: repeat;
+	font-family: SilkscreenNormal;
+	color: white;
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	width: auto;
+}
+
+/* Classes */
+
+.button {
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	font-family: SilkscreenNormal;
+	font-size: 2vh;
+	border: .15vw solid white;
+	width: 10vw;
+}
+.button:hover{
+	color: cyan;
+	border: .15vw solid cyan;
+}
+
+.buttonToggle {
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	font-family: SilkscreenNormal;
+	font-size: 2vh;
+	border: .15vw solid white;
+	width: 10vw;
+}
+.buttonToggle:hover{
+	color: cyan;
+	border: .15vw solid cyan;
+}
+
+/* Buttons */
+
+#StartButton {
+	position: absolute;
+	z-index: 1;
+	top: 1vh;
+	left: 1vw;
+	visibility: visible;
+}
+
+#ResetButton {
+	position: absolute;
+	z-index: 1;
+	top: 1vh;
+	left: 1vw;
+	visibility: hidden;
+}
+
+/* Racer Images */
+
+#NyanCat {
+	position: relative;
+	top: 10vh;
+	left: 0px;
+	width: 10vw;
+}
+
+#TacNayn {
+	position: relative;
+	top: 10vh;
+	width: 10vw;
+}
+
+/* Text */
+
+#RaceHeading {
+	font-family: SilkscreenNormal;
+	position: absolute;
+	z-index: -1;
+	top: 0vh;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	font-size: 30px;
+	font-size: 5vh;
+	color: white;
+}
+
+#RaceNyanedFor {
+	font-family: SilkscreenNormal;
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	bottom: 10vh;
+	text-align: center;
+	font-size: 16px;
+	font-size: 2vh;
+	color: white;
+	visibility: hidden;
+}
+
+#Timer {
+	font-family: SilkscreenNormal;
+	z-index: -1;
+	text-align: center;
+	font-size: 16px;
+	font-size: 2vh;
+	color: white;
+}
+
+#MoreNyan {
+	font-family: SilkscreenNormal;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 1vh;
+	text-align: center;
+	font-size: 16px;
+	font-size: 2vh;
+	color: white;
+}
+
+/* Winner Images */
+
+#NyanCatWin {
+	position: absolute;
+	z-index: 1;
+	top: 10vh;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 40vw;
+	visibility: hidden;
+}
+
+#TacNaynWin {
+	position: absolute;
+	z-index: 1;
+	top: 10vh;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 40vw;
+	visibility: hidden;
+}
+
+#Tie {
+	position: absolute;
+	z-index: 1;
+	top: 10vh;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 40vw;
+	visibility: hidden;
+}
+
+/* Link Properties */
+
+/* Unvisited Link */
+a:link {
+    color: white;
+}
+
+/* Visited Link */
+a:visited {
+    color: white;
+}
+
+/* Mouseover Link */
+a:hover {
+    color: cyan;
+}
+
+/* Selected Link */
+a:active {
+    color: blue;
+} 
